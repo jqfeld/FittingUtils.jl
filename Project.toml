@@ -1,0 +1,7 @@
+name = "FittingUtils"
+uuid = "05fb8ae4-0a1d-428f-a5a0-40f234e78f93"
+authors = ["Jan Kuhfeld <jankuhfeld@plasma-matters.nl> and contributors"]
+version = "0.0.1"
+
+[compat]
+julia = "1.10.10"
