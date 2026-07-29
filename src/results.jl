@@ -1,11 +1,3 @@
-"""
-    FitResult(params, resid, wt)
-
-Container returned by [`fit_spectrum`](@ref) encapsulating parameter
-posteriors or estimates (`params`), residuals (`resid`), and optional weights
-(`wt`). `FitResult` implements the `StatsAPI` interface, providing accessors
-such as `coef`, `stderror`, `rss`, and `weights` for downstream analysis.
-"""
 struct FitResult{F, X, P, R, W}
     model::F
     input::X
