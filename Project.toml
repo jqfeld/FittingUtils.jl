@@ -10,6 +10,6 @@ StatsAPI = "82ae8749-77ed-4fe6-ae5f-f523153014b0"
 
 [compat]
 ComponentArrays = "0.15.43"
-Statistics = "1.11"
+julia = "1.10"
+Statistics = "1.10"
 StatsAPI = "1.8.0"
-julia = "1.11"
