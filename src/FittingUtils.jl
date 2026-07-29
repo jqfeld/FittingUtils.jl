@@ -2,6 +2,7 @@ module FittingUtils
 
 using Statistics
 import StatsAPI
+using ComponentArrays
 
 include("method.jl")
 export TuringJL, LevenbergMarquardt

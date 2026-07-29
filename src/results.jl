@@ -9,7 +9,7 @@ end
 Base.getindex(fr::FitResult, k::Symbol) = fr.params[k]
 
 function _component_func(ps, func)
-    type = Base.typename(typeof(ps)).wrapper
+    type = typeof(ps).name.wrapper
     return type(; [k => func(ps[k]) for k in keys(ps)]...)
 end
 
