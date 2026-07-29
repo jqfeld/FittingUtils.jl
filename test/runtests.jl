@@ -8,7 +8,7 @@ using JET
         Aqua.test_all(FittingUtils)
     end
     @testset "Code linting (JET.jl)" begin
-        JET.test_package(FittingUtils; target_defined_modules = true)
+        JET.test_package(FittingUtils; target_modules = (FittingUtils,))
     end
     # Write your tests here.
 end
