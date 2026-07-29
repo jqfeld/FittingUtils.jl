@@ -1,8 +1,8 @@
 abstract type FitMethod end
 
 
-struct TuringJL <: FitMethod end
-dependency(::TuringJL) = "Turing"
+struct TuringFit <: FitMethod end
+dependency(::TuringFit) = "Turing"
 
-struct LevenbergMarquardt <: FitMethod end
-dependency(::LevenbergMarquardt) = "NonlinearSolve"
+struct LevenbergMarquardtFit <: FitMethod end
+dependency(::LevenbergMarquardtFit) = "NonlinearSolve"

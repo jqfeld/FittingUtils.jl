@@ -5,11 +5,33 @@ authors = ["Jan Kuhfeld <jankuhfeld@plasma-matters.nl> and contributors"]
 
 [deps]
 ComponentArrays = "b0b7db55-cfe3-40fc-9ded-d10e2dbeff66"
+Distributions = "31c24e10-a181-5473-b8eb-7969acd0382f"
+EmpiricalDistributions = "0bbb1fad-0f24-45fe-94a4-415852c5cc3b"
+FiniteDiff = "6a86dc24-6348-571c-b903-95158fe2bd41"
+ForwardDiff = "f6369f11-7733-5829-9624-2563aa707210"
+LinearAlgebra = "37e2e46d-f89d-539d-b4ee-838fcccc9c8e"
 Statistics = "10745b16-79ce-11e8-11f9-7d13ad32a3b2"
 StatsAPI = "82ae8749-77ed-4fe6-ae5f-f523153014b0"
+StatsBase = "2913bbd2-ae8a-5f71-8c99-4fb6c76f3a91"
+
+[weakdeps]
+NonlinearSolve = "8913a72c-1f9b-4ce2-8d82-65094dcecaec"
+Turing = "fce5fe82-541a-59a6-adf8-730c64b5f9a0"
+
+[extensions]
+FittingUtilsNonlinearSolveExt = "NonlinearSolve"
+FittingUtilsTuringExt = "Turing"
 
 [compat]
 ComponentArrays = "0.15.43"
-julia = "1.10"
+Distributions = "0.25.130"
+EmpiricalDistributions = "0.3.10"
+FiniteDiff = "2.32.0"
+ForwardDiff = "1.4.3"
+LinearAlgebra = "1.10"
+NonlinearSolve = "4.23.0"
 Statistics = "1.10"
 StatsAPI = "1.8.0"
+StatsBase = "0.34.12"
+Turing = "0.46.0"
+julia = "1.10"
