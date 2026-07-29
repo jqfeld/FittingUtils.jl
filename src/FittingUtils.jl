@@ -1,5 +1,10 @@
 module FittingUtils
 
-# Write your package code here.
+using Statistics
+import StatsAPI
+
+include("method.jl")
+include("results.jl")
+include("fit_model.jl")
 
 end
